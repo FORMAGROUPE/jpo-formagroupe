@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Journées portes ouvertes 2026-2027 – FORMAVAR, Formaplus, FORMABEAUTÉ | Formagroupe</title>
+<meta name="description" content="Journées portes ouvertes 2026-2027 de FORMAVAR, Formaplus et FORMABEAUTÉ (La Valette et Toulon) : dates, horaires, formations présentées et inscription.">
+<link rel="canonical" href="{{SITE}}">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Formagroupe">
+<meta property="og:title" content="Journées portes ouvertes 2026-2027 – Formagroupe">
+<meta property="og:description" content="Quelle JPO, dans quel campus, pour quelle formation ? Retrouvez toutes les dates de FORMAVAR, Formaplus et FORMABEAUTÉ.">
+<meta property="og:url" content="{{SITE}}">
+<link rel="preload" href="polices/raleway-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="polices/ubuntu-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">{{JSONLD}}</script>
+</head>
+<body>
+<a class="lien-evitement" href="#contenu">Aller au contenu</a>
+
+<header class="entete">
+<a class="logo" href="https://www.formagroupe.fr"><img src="logo-formagroupe.svg" alt="FORMAGROUPE, FORMAVAR, FORMAPLUS, FORMABEAUTÉ – retour au site formagroupe.fr" width="157" height="96"></a>
+<nav class="nav" aria-label="Navigation principale">
+<a href="https://www.formagroupe.fr/">Accueil</a>
+<a href="https://www.formagroupe.fr/resultats-et-satisfaction">Résultats et satisfaction</a>
+<a class="bouton-rouge" href="https://www.formagroupe.fr/modal-etudiant-admission">Inscription</a>
+</nav>
+</header>
+
+<main id="contenu">
+
+<section class="accroche" aria-labelledby="titre-page">
+<div class="contenu">
+<h1 id="titre-page"><span class="gras">Journées portes ouvertes</span><br><span class="fin">2026-2027</span></h1>
+<p class="intro">Chaque campus organise ses propres journées. Choisissez votre campus, repérez votre date, puis inscrivez-vous.</p>
+<div class="actions">
+<div class="prochaine" id="prochaine">
+<p class="etiquette">Prochaine journée</p>
+<p class="date" id="prochaine-date">Voir le calendrier ci-dessous</p>
+<p class="lieux" id="prochaine-lieux"></p>
+</div>
+<a class="bouton-contour clair" href="#calendrier">Voir toutes les dates</a>
+</div>
+</div>
+</section>
+
+<section class="section filtres" aria-labelledby="titre-choix">
+<div class="cadre">
+<h2 class="titre-section" id="titre-choix">Quelle JPO pour vous ?</h2>
+<p class="chapeau">Répondez à une ou aux deux questions.<br>La page n’affiche que les dates et les campus qui vous concernent.</p>
+<div class="groupe-filtre" role="group" aria-labelledby="lbl-campus">
+<p class="libelle-filtre" id="lbl-campus">1. Votre campus</p>
+<div class="pastilles">
+{{PASTILLES_CAMPUS}}
+</div>
+</div>
+<div class="groupe-filtre" role="group" aria-labelledby="lbl-domaine">
+<p class="libelle-filtre" id="lbl-domaine">2. Votre domaine de formation</p>
+<div class="pastilles">
+{{PASTILLES_DOMAINE}}
+</div>
+</div>
+<p class="resume" id="resume" aria-live="polite"></p>
+<p class="aucun" id="aucun" hidden>Aucun campus ne correspond à cette combinaison. Changez de campus ou de domaine.</p>
+</div>
+</section>
+
+<section class="section" id="campus" aria-labelledby="titre-campus" style="padding-top:24px">
+<div class="cadre">
+<h2 class="titre-section" id="titre-campus" style="margin-bottom:32px">Nos campus</h2>
+<div class="grille-campus">
+{{CARTES}}
+</div>
+</div>
+</section>
+
+<section class="section pale" id="calendrier" aria-labelledby="titre-cal">
+<div class="cadre">
+<h2 class="titre-section" id="titre-cal" style="margin-bottom:32px">Toutes les dates</h2>
+<ol class="liste-dates" id="liste-dates">
+{{LIGNES}}
+</ol>
+</div>
+</section>
+
+<section class="section bleu" id="inscription" aria-labelledby="titre-insc">
+<div class="cadre etroit">
+<h2 class="titre-section" id="titre-insc">Je m’inscris</h2>
+<p class="chapeau">Vous recevez un email de confirmation avec la date, le campus et l’adresse.</p>
+<form class="formulaire" id="form-jpo" method="post" action="#inscription" novalidate>
+<div class="champs">
+<div class="large">
+<label class="etiquette" for="f-jpo">Journée choisie (obligatoire)</label>
+<select id="f-jpo" name="jpo" required>
+<option value="">Choisissez une journée</option>
+{{OPTIONS_JPO}}
+</select>
+</div>
+<div class="large">
+<label class="etiquette" for="f-campus">Campus (obligatoire)</label>
+<select id="f-campus" name="campus" required>
+<option value="">Choisissez un campus</option>
+{{OPTIONS_CAMPUS}}
+</select>
+</div>
+<div>
+<label class="etiquette" for="f-prenom">Prénom (obligatoire)</label>
+<input id="f-prenom" name="prenom" type="text" required autocomplete="given-name">
+</div>
+<div>
+<label class="etiquette" for="f-nom">Nom (obligatoire)</label>
+<input id="f-nom" name="nom" type="text" required autocomplete="family-name">
+</div>
+<div>
+<label class="etiquette" for="f-mail">Email (obligatoire)</label>
+<input id="f-mail" name="email" type="email" required autocomplete="email">
+</div>
+<div>
+<label class="etiquette" for="f-tel">Téléphone (facultatif)</label>
+<input id="f-tel" name="telephone" type="tel" autocomplete="tel">
+</div>
+<div>
+<label class="etiquette" for="f-profil">Vous êtes (facultatif)</label>
+<select id="f-profil" name="profil">
+<option value="">Choisissez</option>
+<option>Lycéen ou lycéenne</option>
+<option>Étudiant ou étudiante</option>
+<option>Adulte en reconversion</option>
+<option>Parent</option>
+</select>
+</div>
+<div>
+<label class="etiquette" for="f-acc">Personnes qui vous accompagnent (facultatif)</label>
+<input id="f-acc" name="accompagnants" type="number" min="0" max="20" inputmode="numeric">
+</div>
+<div class="large">
+<label class="etiquette" for="f-form">Formation qui vous intéresse (facultatif)</label>
+<input id="f-form" name="formation" type="text">
+</div>
+<div class="piege" aria-hidden="true">
+<label for="f-site">Ne pas remplir ce champ</label>
+<input id="f-site" name="site_web" type="text" tabindex="-1" autocomplete="off">
+</div>
+<div class="large consentement">
+<input id="f-rgpd" name="consentement" type="checkbox" required>
+<label id="lbl-rgpd" for="f-rgpd">J’accepte que Formagroupe utilise ces informations pour gérer mon inscription à la journée portes ouvertes et pour me contacter à ce sujet. (obligatoire)</label>
+</div>
+</div>
+
+<div class="mention">
+<p class="titre-mention">Protection de vos données</p>
+<p>Responsable du traitement : SARL FORMAVAR, 515 avenue Pablo Picasso, 83160 La Valette-du-Var. Finalité : gérer votre inscription à la journée portes ouvertes et vous contacter à ce sujet. Base légale : votre consentement, que vous donnez en cochant la case ci-dessus. Destinataires : la déléguée à la protection des données de Formagroupe, qui reçoit les inscriptions, et les conseillères en formation, qui vous accompagnent ensuite dans votre projet. Sous-traitants techniques : GitHub (hébergement de la page, sans accès aux inscriptions) et n8n (transmission des inscriptions). Durée de conservation : vos données sont supprimées une fois la journée portes ouvertes terminée, et au plus tard 12 mois après votre inscription. Vous pouvez demander l’accès, la rectification, l’effacement de vos données ou vous opposer à leur traitement. Contact du délégué à la protection des données : <a href="mailto:formavarpro@orange.fr">formavarpro@orange.fr</a>. Voir la <a href="https://www.formagroupe.fr/politique-confidentialite">politique de confidentialité</a>.</p>
+</div>
+
+<div class="envoi">
+<button class="bouton-rouge" type="submit" id="envoi">Je m’inscris</button>
+</div>
+<p class="etat" id="etat" role="status" aria-live="polite"></p>
+</form>
+<noscript><p class="chapeau" style="margin-top:24px">L’inscription en ligne demande JavaScript. Sans JavaScript, appelez le campus : les numéros figurent sur chaque carte.</p></noscript>
+</div>
+</section>
+
+<section class="section" aria-labelledby="titre-faq">
+<div class="cadre etroit">
+<h2 class="titre-section" id="titre-faq" style="margin-bottom:32px">Questions fréquentes</h2>
+<details class="question">
+<summary>Les dates sont-elles les mêmes dans tous les campus ?</summary>
+<p>Non. Chaque campus a son propre calendrier. Utilisez les deux filtres en haut de page, ou lisez le nom du campus sur chaque ligne du calendrier.</p>
+</details>
+<details class="question">
+<summary>FORMAVAR et FORMABEAUTÉ La Valette sont-ils au même endroit ?</summary>
+<p>Oui. Les deux écoles sont au 515 avenue Pablo Picasso, à La Valette-du-Var. FORMABEAUTÉ occupe le dernier étage. FORMABEAUTÉ Toulon est un autre campus, au 7 rue Picot.</p>
+</details>
+<details class="question">
+<summary>Où se trouve Formaplus ?</summary>
+<p>À Puget-sur-Argens, au 36 chemin du Drap. Formaplus n’est pas à La Valette-du-Var.</p>
+</details>
+<details class="question">
+<summary>L’inscription est-elle obligatoire ? Puis-je venir avec mes parents ?</summary>
+<p>Non, l’inscription n’est pas obligatoire. Elle nous permet de mieux nous organiser. Vous pouvez venir avec vos parents.</p>
+</details>
+<details class="question">
+<summary>Aucune date ne convient. Que faire ?</summary>
+<p>Appelez le campus qui vous intéresse. Les numéros figurent sur chaque carte de campus.</p>
+</details>
+</div>
+</section>
+
+<section class="section bloc-handicap" aria-labelledby="titre-acc" style="padding-top:0">
+<div class="boite">
+<h2 id="titre-acc">Accueil des personnes en situation de handicap</h2>
+<p>Référent handicap du groupe : Jean-Philippe Pireaux. Contact : <a href="mailto:jp.pireaux@formagroupe.fr">jp.pireaux@formagroupe.fr</a></p>
+<p>Le livret d’accueil est disponible sur la page de chaque école, sur formagroupe.fr.</p>
+</div>
+</section>
+
+</main>
+
+<footer class="pied">
+<div class="cadre">
+<div class="adresses">
+<div><p class="nom">FORMAVAR</p><p>515 Avenue Pablo Picasso<br>83160 La Valette du Var<br>Tél. <a href="tel:0494017563">04 94 01 75 63</a></p></div>
+<div><p class="nom">Formaplus</p><p>36 Chemin du Drap<br>83520 Puget-sur-Argens<br>Tél. <a href="tel:0494170840">04 94 17 08 40</a></p></div>
+<div><p class="nom">Formabeauté</p><p>515 Avenue Pablo Picasso<br>83160 La Valette du Var<br>Tél. <a href="tel:0494225998">04 94 22 59 98</a></p></div>
+<div><p class="nom">Formapro</p><p>515 Avenue Pablo Picasso<br>83160 La Valette du Var<br>Tél. <a href="tel:0494017563">04 94 01 75 63</a></p></div>
+<div><p class="nom">Formabeauté Campus Toulon</p><p>7 Rue Picot<br>83000 Toulon<br>Tél. <a href="tel:0494647233">04 94 64 72 33</a></p></div>
+</div>
+<p class="reseaux"><strong style="text-transform:uppercase">Suivez-nous</strong> sur les réseaux sociaux :
+<a href="https://www.facebook.com/formavarofficiel/">Facebook</a>
+<a href="https://www.linkedin.com/company/formagroupe---business-school/">LinkedIn</a>
+<a href="https://www.instagram.com/ecole_formavar/">Instagram</a>
+<a href="https://www.tiktok.com/@formagroupe">TikTok</a></p>
+<nav class="colonnes" aria-label="Pied de page">
+<div><p class="nom">Formagroupe</p>
+<a href="https://www.formagroupe.fr/formagroupe-centre-formation-var">Découvrez FORMAGROUPE</a>
+<a href="https://www.formagroupe.fr/formagroupe-choisir-formation-var">Pourquoi choisir FORMAGROUPE</a>
+<a href="https://www.formagroupe.fr/formagroupe-locaux-formation-la-valette-du-var">Nos locaux : La Valette du Var</a>
+<a href="https://www.formagroupe.fr/formagroupe-locaux-formation-puget-sur-argens">Nos locaux : Puget-sur-Argens</a>
+<a href="https://www.formagroupe.fr/actualites-formations-var">Actualités</a>
+<a href="https://www.formagroupe.fr/contact">Nous contacter</a></div>
+<div><p class="nom">Étudiants</p>
+<a href="https://www.formagroupe.fr/etudiants-formations-var">Découvrez nos formations</a>
+<a href="https://www.formagroupe.fr/etudiants-formations-alternance-var">Votre formation en alternance</a>
+<a href="https://www.formagroupe.fr/etudiant-financement-formation-var">Financez vos études</a>
+<a href="https://www.formagroupe.fr/etudiant-admission-formation-var">Admission</a>
+<a href="https://www.formagroupe.fr/etudiant-offre-emploi-alternance-var">Nos offres d’emploi en alternance</a>
+<a href="https://www.formagroupe.fr/etudiant-contact-formation-var">Contactez-nous</a></div>
+<div><p class="nom">Salariés &amp; demandeurs d’emploi</p>
+<a href="https://www.formagroupe.fr/medias/371-catalogue-des-formations.pdf">Catalogue des formations</a>
+<a href="https://www.formagroupe.fr/salarie-formation-professionnelle-continue">La formation professionnelle continue</a>
+<a href="https://www.formagroupe.fr/salarie-formations-esthetiques">Formations esthétiques</a>
+<a href="https://www.formagroupe.fr/salarie-financement-formation-var">Financement</a>
+<a href="https://www.formagroupe.fr/salarie-devis-formation-continue-var">Contact / Demande de devis</a></div>
+<div><p class="nom">Entreprises</p>
+<a href="https://www.formagroupe.fr/entreprise-formation-collaborateurs-var">Formez vos salariés</a>
+<a href="https://www.formagroupe.fr/entreprises-formations-esthetiques">Formations esthétiques</a>
+<a href="https://www.formagroupe.fr/entreprise-avantages-employeur-formation-var">Vos avantages employeurs</a>
+<a href="https://www.formagroupe.fr/entreprise-offre-contrat-alternance-var">Déposez une offre de contrat</a></div>
+</nav>
+<p class="legal"><a href="https://www.formagroupe.fr/mentions-legales">Mentions légales</a><a href="https://www.formagroupe.fr/politique-confidentialite">Politique de confidentialité</a></p>
+</div>
+</footer>
+
+<script type="application/json" id="donnees-jpo">{{DONNEES}}</script>
+<script src="config.js"></script>
+<script src="app.js" defer></script>
+</body>
+</html>

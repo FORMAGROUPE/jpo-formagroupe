@@ -1,0 +1,334 @@
+{
+ "types": {
+  "jpo": "Journée portes ouvertes",
+  "mfa": "Mercredi de la Formation et l'Alternance",
+  "grande": "Grande JPO Formagroupe",
+  "orient": "Mercredi de l'orientation régionale"
+ },
+ "campus": [
+  {
+   "id": "fv",
+   "ecole": "FORMAVAR",
+   "court": "La Valette",
+   "ville": "La Valette-du-Var",
+   "domaines": [
+    "tert"
+   ],
+   "couleur": "#005fab",
+   "texte": "#005fab",
+   "fond": "#005fab",
+   "encre": "#ffffff",
+   "bord": "#005fab",
+   "presentation": "Un campus accueillant et propice à la réussite.\nToutes les formations sont en apprentissage et/ou en initial",
+   "adresse": "515 Avenue Pablo Picasso",
+   "cp": "83160",
+   "tel": "04 94 01 75 63",
+   "email": "alternance@formagroupe.fr",
+   "acces": "Bus : lignes 129 et 31, arrêt Picasso (arrêt direct) ; lignes U et 191A, arrêt Les Espaluns (10 min à pied). Voiture : sortie n°4 depuis Toulon, sortie n°5 depuis Nice.",
+   "formations": [
+    "BTS : Communication, Management Commercial Opérationnel, Gestion de la PME, Support à l'Action Managériale, Assurance, Négociation et Digitalisation de la Relation Client, Professions Immobilières, Tourisme.",
+    "Bac+3 (niveau 6) : Chargé de Développement des Ressources Humaines, Conseiller clientèle Banque et Assurance, Chargé de Communication, Chargé de développement commercial, Office manager.",
+    "Bac+5 (niveau 7) : Manager Commercial et Marketing, Manager des stratégies marketing et communication, Manager en Ressources Humaines, Business Unit.",
+    "Titres professionnels : Conseiller de vente, Chargé d'accueil et de gestion administrative."
+   ],
+   "valeurForm": "formavar"
+  },
+  {
+   "id": "fp",
+   "ecole": "FORMAPLUS",
+   "court": "Puget-sur-Argens",
+   "ville": "Puget-sur-Argens",
+   "domaines": [
+    "tert",
+    "beaute"
+   ],
+   "couleur": "#0090d0",
+   "texte": "#005fab",
+   "fond": "#e6f4fb",
+   "encre": "#005fab",
+   "bord": "#0090d0",
+   "presentation": "Nouveau campus, dans des locaux neufs. Toutes les formations sont en apprentissage et/ou en initial",
+   "adresse": "36 Chemin du Drap",
+   "cp": "83520",
+   "tel": "04 94 17 08 40",
+   "email": "contact.formaplus@formagroupe.fr",
+   "acces": "Bus, arrêt Général De Gaulle : ligne 4 depuis Saint-Raphaël et Fréjus ; ligne 826 depuis Draguignan ; depuis Saint-Tropez, ligne 876 puis correspondance ligne 4 à la gare routière de Saint-Raphaël. Voiture : sortie n°37 depuis Toulon et depuis Nice. Parking sur place.",
+   "formations": [
+    "BTS : Communication, Management Commercial Opérationnel, Gestion de la PME, Support à l'Action Managériale, Négociation et Digitalisation de la Relation Client, Professions Immobilières, Tourisme, SP3S.",
+    "Bac+3 (niveau 6) : Chargé de Développement des Ressources Humaines, Conseiller clientèle Banque et Assurance, Chargé de Communication, Chargé de développement commercial, Office manager.",
+    "Bac+5 (niveau 7) : Manager Commercial et Marketing, Manager des stratégies marketing et communication, Manager en Ressources Humaines, Business Unit.",
+    "Titres professionnels : Conseiller de vente, Chargé d'accueil et de gestion administrative.",
+    "Esthétique : CAP et BP."
+   ],
+   "valeurForm": "formaplus"
+  },
+  {
+   "id": "fbl",
+   "ecole": "FORMABEAUTÉ",
+   "court": "La Valette",
+   "ville": "La Valette-du-Var",
+   "domaines": [
+    "beaute"
+   ],
+   "couleur": "#b04090",
+   "texte": "#8a2a70",
+   "fond": "#b04090",
+   "encre": "#ffffff",
+   "bord": "#b04090",
+   "presentation": "Au dernier étage du campus de La Valette, dans le même bâtiment que FORMAVAR. Toutes les formations sont en apprentissage et/ou en initial",
+   "adresse": "515 Avenue Pablo Picasso",
+   "cp": "83160",
+   "tel": "04 94 22 59 98",
+   "email": "clara.palmieri@formagroupe.fr",
+   "acces": "Bus : lignes 129 et 31, arrêt Picasso ; lignes U et 191A, arrêt Les Espaluns (10 min à pied). Voiture : sortie n°4 depuis Toulon, sortie n°5 depuis Nice. Situé au dernier étage du campus.",
+   "formations": [
+    "Esthétique : CAP, BP et BTS métiers de l’esthétique.",
+    "Diététique : BTS Diététique et nutrition."
+   ],
+   "valeurForm": "formabeaute-la-valette"
+  },
+  {
+   "id": "fbt",
+   "ecole": "FORMABEAUTÉ",
+   "court": "Toulon",
+   "ville": "Toulon",
+   "domaines": [
+    "beaute"
+   ],
+   "couleur": "#b04090",
+   "texte": "#8a2a70",
+   "fond": "#ffffff",
+   "encre": "#8a2a70",
+   "bord": "#b04090",
+   "presentation": "Ce campus est équipé de tout le matériel nécessaire pour pratiquer de manière professionnelle la coiffure et l'esthétique. Toutes les formations sont en apprentissage et/ou en initial",
+   "adresse": "7 Rue Picot",
+   "cp": "83000",
+   "tel": "04 94 64 72 33",
+   "email": "toulon@formabeaute.fr",
+   "acces": "En voiture : parking Place de la Liberté. En bus : arrêt Place de la Liberté. En train : gare de Toulon, à 5 minutes à pied.",
+   "formations": [
+    "Coiffure : CAP et BP métiers de la coiffure.",
+    "Esthétique : CAP, BP, Bac Pro et BTS métiers de l’esthétique."
+   ],
+   "valeurForm": "formabeaute-toulon"
+  }
+ ],
+ "jpo": [
+  {
+   "date": "2026-10-07",
+   "type": "jpo",
+   "campus": [
+    "fv",
+    "fbl",
+    "fbt"
+   ],
+   "horaires": "9h30 - 17h30",
+   "statut": "Confirmé"
+  },
+  {
+   "date": "2026-11-14",
+   "type": "jpo",
+   "campus": [
+    "fv",
+    "fbl",
+    "fbt"
+   ],
+   "horaires": "9h30 - 16h00",
+   "statut": "Confirmé"
+  },
+  {
+   "date": "2026-11-28",
+   "type": "jpo",
+   "campus": [
+    "fp"
+   ],
+   "horaires": "9h30 - 16h00",
+   "statut": "Confirmé"
+  },
+  {
+   "date": "2026-12-09",
+   "type": "mfa",
+   "campus": [
+    "fv",
+    "fp",
+    "fbl",
+    "fbt"
+   ],
+   "horaires": "9h30 - 17h30",
+   "statut": "Confirmé"
+  },
+  {
+   "date": "2027-01-16",
+   "type": "grande",
+   "campus": [
+    "fv",
+    "fp",
+    "fbl",
+    "fbt"
+   ],
+   "horaires": "9h30 - 16h00",
+   "statut": "Confirmé"
+  },
+  {
+   "date": "2027-01-27",
+   "type": "mfa",
+   "campus": [
+    "fv",
+    "fp",
+    "fbl",
+    "fbt"
+   ],
+   "horaires": "9h30 - 17h30",
+   "statut": "Confirmé"
+  },
+  {
+   "date": "2027-02-10",
+   "type": "jpo",
+   "campus": [
+    "fv",
+    "fp",
+    "fbl",
+    "fbt"
+   ],
+   "horaires": "9h30 - 17h30",
+   "statut": "Confirmé"
+  },
+  {
+   "date": "2027-02-13",
+   "type": "jpo",
+   "campus": [
+    "fp"
+   ],
+   "horaires": "9h30 - 16h00",
+   "statut": "Confirmé"
+  },
+  {
+   "date": "2027-02-24",
+   "type": "mfa",
+   "campus": [
+    "fv",
+    "fp",
+    "fbl",
+    "fbt"
+   ],
+   "horaires": "9h30 - 17h30",
+   "statut": "Confirmé"
+  },
+  {
+   "date": "2027-03-03",
+   "type": "orient",
+   "campus": [
+    "fv",
+    "fp",
+    "fbl",
+    "fbt"
+   ],
+   "horaires": "9h30 - 17h30",
+   "statut": "Confirmé"
+  },
+  {
+   "date": "2027-03-06",
+   "type": "jpo",
+   "campus": [
+    "fv",
+    "fbl"
+   ],
+   "horaires": "9h30 - 16h00",
+   "statut": "Confirmé"
+  },
+  {
+   "date": "2027-03-10",
+   "type": "orient",
+   "campus": [
+    "fv",
+    "fp",
+    "fbl",
+    "fbt"
+   ],
+   "horaires": "9h30 - 17h30",
+   "statut": "Confirmé"
+  },
+  {
+   "date": "2027-03-13",
+   "type": "jpo",
+   "campus": [
+    "fp",
+    "fbt"
+   ],
+   "horaires": "9h30 - 16h00",
+   "statut": "Confirmé"
+  },
+  {
+   "date": "2027-03-17",
+   "type": "orient",
+   "campus": [
+    "fv",
+    "fp",
+    "fbl",
+    "fbt"
+   ],
+   "horaires": "9h30 - 17h30",
+   "statut": "Confirmé"
+  },
+  {
+   "date": "2027-03-24",
+   "type": "orient",
+   "campus": [
+    "fv",
+    "fp",
+    "fbl",
+    "fbt"
+   ],
+   "horaires": "9h30 - 17h30",
+   "statut": "Confirmé"
+  },
+  {
+   "date": "2027-03-31",
+   "type": "orient",
+   "campus": [
+    "fv",
+    "fp",
+    "fbl",
+    "fbt"
+   ],
+   "horaires": "9h30 - 17h30",
+   "statut": "Confirmé"
+  },
+  {
+   "date": "2027-04-10",
+   "type": "jpo",
+   "campus": [
+    "fv",
+    "fp",
+    "fbl",
+    "fbt"
+   ],
+   "horaires": "9h30 - 16h00",
+   "statut": "Confirmé"
+  },
+  {
+   "date": "2027-04-21",
+   "type": "mfa",
+   "campus": [
+    "fv",
+    "fp",
+    "fbl",
+    "fbt"
+   ],
+   "horaires": "9h30 - 17h30",
+   "statut": "Confirmé"
+  },
+  {
+   "date": "2027-05-12",
+   "type": "jpo",
+   "campus": [
+    "fv",
+    "fp",
+    "fbl",
+    "fbt"
+   ],
+   "horaires": "9h30 - 17h30",
+   "statut": "Confirmé"
+  }
+ ]
+}

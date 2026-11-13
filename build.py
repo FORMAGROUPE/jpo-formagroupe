@@ -93,7 +93,7 @@ for c in D["campus"]:
 </ul>
 <p class="note">Les horaires sont indiqués pour chaque date.</p>
 <div class="boutons">
-<a class="bouton-rouge" href="#inscription" data-inscription data-campus="{c["id"]}">M’inscrire<span class="sr-only"> à une journée {esc(c["ecole"])} {esc(c["court"])}</span></a>
+<a class="bouton-rouge" href="#inscription" data-inscription data-campus="{c["id"]}">Inscrivez-vous à une JPO<span class="sr-only"> – {esc(c["ecole"])} {esc(c["court"])}</span></a>
 <a class="bouton-contour" href="{plan_url(c)}" target="_blank" rel="noopener">Voir le plan d’accès<span class="sr-only"> de {esc(c["ecole"])} {esc(c["court"])} (nouvelle fenêtre)</span></a>
 </div>
 </div>
@@ -120,7 +120,7 @@ for j in jpo:
 </div>
 <div class="droite">
 <p class="horaires">Horaires : <strong>{esc(j["horaires"])}</strong></p>
-<a class="bouton-rouge petit" href="?jpo={j["date"]}#inscription" data-inscription data-jpo="{j["date"]}">M’inscrire<span class="sr-only"> le {esc(long_date(j["date"]))}</span></a>
+<a class="bouton-rouge petit" href="?jpo={j["date"]}#inscription" data-inscription data-jpo="{j["date"]}">Inscrivez-vous à cette JPO<span class="sr-only"> du {esc(long_date(j["date"]))}</span></a>
 </div>
 </li>''')
 
